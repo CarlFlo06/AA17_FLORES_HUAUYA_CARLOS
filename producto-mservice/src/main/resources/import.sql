@@ -1,0 +1,1 @@
+insert into Producto (nombre,precio) values('Arroz',3.20);

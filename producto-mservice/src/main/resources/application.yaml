@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: producto-service
+      
+server:
+  port: ${PORT:0}
+  #port: 8081
+  
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    #fetch-registry: true
+    #register-with-eureka: true
+    
+    
+
+  #cloud:
+    #config:
+      #enabled: true
+      #uri: http://localhost:8081
